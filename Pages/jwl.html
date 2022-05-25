@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <!-- cdn font-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- cdn bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="shortcut icon" href="../images/brand-logo-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/jwl.css">
+    <title>CrystalBlue</title>
+</head>
+<body>
+    <nav class="header">
+        <i class="fa fa-bars bars" onclick=menu()></i>
+        <a href="../index.html">
+        <img class="brand-logo" src="../images/img/jw1.jpeg" alt="brand-logo" />
+        <h3 class="brand-name">Crystal</h3>
+        <h3 class="brand-name">Blue</h3>
+        </a>
+        <a href="../Pages/search.html"><i class="fa fa-search search"><span>Search Jewellery</span></i></a>
+        <ul class="links">
+            <li><a href="../index.html" ><i class="fa fa-home"></i>Home</a></li>
+            <hr noshade="">
+            <li><a href="#"><i class="fa fa-diamond"></i>Shopping</a></li>
+            <hr noshade="">
+            <li><a href="#"><i class="fa fa-rss"></i>Blog</a></li>
+            <hr noshade="" />
+            <li>
+            <a href="../Pages/payment.html"><i class="fa fa-shopping-cart"></i>Payment</a>
+            </li>
+            <hr noshade="">
+            <!-- <li><a href="#"><i class="fa fa-rss"></i>Payment</a></li> -->
+            <hr noshade="">
+            <li><a href="../Pages/signin.html"><i class="fa fa-sign-in"></i>Admin</a></li>
+        </ul>
+    </nav>
+    <nav class="home-nav">
+        <hr noshade="">
+        <ul>
+            <!--all ids for home nav must we in small letter-->
+            <li><i class="fa fa-tags"></i><span>Filters</span>
+                <ul>
+                    <li id="all">All</li>
+                    <li id="action">Price</li>
+                    <li id="drama">Rating</li>
+                    <li id="comedy">Type</li>
+                    <li id="thriller">Brand</li>
+                    <li id="sci-fi">Weight</li>
+                    <li id="adventure">Manufactured</li>
+                    <li id="horror">Language</li>
+                    <li id="animated">Certification</li>
+                    <li id="suspense">Name</li>              
+                </ul>
+            </li>
+            <li><i class="fa fa-sort-amount-asc"></i><span>Sort By</span>
+                <ul>
+                    <li id="name">Name</li>
+                    <li id="time">Time</li>
+                    <li id="popularity">Rating</li>
+
+                    <li id="price">Price</li>
+
+                </ul>
+            </li>
+            <li><i class="fa fa-language"></i><span>Language</span>
+                <ul>
+                    <li id="any">Any</li>
+                    <li id="hindi">Hindi</li>
+                    <li id="english">English</li>
+                </ul>
+            </li>
+        </ul>
+        <hr noshade="">
+    </nav>
+
+    <script src="../javascript/header.js"></script>
+    <main>
+        <div id="movie-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#movie-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#movie-carousel" data-slide-to="1"></li>
+                <li data-target="#movie-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item banner active">
+                    <img class="d-block w-100" src="../img/bg/bg-3.jpg" alt="First slide">                      
+                    <div class="carousel-caption">
+                        <h3>Tanishq</h3>
+                        <p>Tanishq is an Indian Jewellery brand and a division of Titan Company, founded in 1994.</p>
+                        <a href="mdetail.html?id=20201023002" class="btn btn-large  btn-secondary"><i class="fa fa-play-circle"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item banner">
+                    <img class="d-block w-100" src="../img/bg/bg-1.jpg" alt="Second slide">
+                    <div class="carousel-caption">
+                        <h3>D'damas</h3>
+                        <p>DDamas is a leading brand in the Jewellery Business. We've been contributing in the jewellery industry for many years and determind to provide great services to all of our customer for years to come. Thank You for beliving in us</p>
+                        <a href="mdetail.html?id=20201023004" class="btn btn-large  btn-secondary"><i class="fa fa-play-circle"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item banner">
+                    <img class="d-block w-100" src="../img/bg/bg-2.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h3>Malabar</h3>
+                        <p>Malabar Group was founded in 1993 by a team of enterprising entrepreneurs, led by the visionary genius of Mr. M P Ahammed when he explored beyond his immediate circle in the agri-corp industry to establish a jewellery trading company in a historical city called Kozhikode. Since then, keeping alive the golden spirit of the brand, the Group has remained constant, in its successful forays nurtured by expertise, vision and guidance, into a formidable business conglomerate.</p>
+                        <a href="mdetail.html?id=20201023001" class="btn btn-large  btn-secondary"><i class="fa fa-play-circle"></i> Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 id="heading" class="genre-heading" style="display:none ;"><span>All</span> Jewelleries</h1>
+    
+
+        <div class="content">
+            <!--movie content added dynamicaly-->
+            <div class="show-more">
+                <button class="btn btn-large btn-outline-primary " onclick=showMore()>Show More</button>
+            </div>
+        </div>
+        <!-- <div class="show-more">
+            <button class="btn btn-large btn-outline-primary " onclick=showMore()>Show More</button>
+        </div> -->
+    </main>
+    <footer>
+        <div class="top">
+            <div class="left-side">
+                <ul class="contact">
+                    <li><a href="#"><i class="fa fa-map-marker"></i>SCO-75, CD3 Delhi, India</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>+919797979733</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>support@crystalblue.com</a></li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <div class="about">
+                    <h4>About the website</h4>
+                    <p>Crystal Blue is a leading jewellery company all over the world.</p>
+                </div>
+                <div class="social-container">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p><a href="#">&copy 2021 Copyright: CrystalBlue.com</a></p>
+        </div>
+    </footer>
+    <script src="../javascript/data/movieList.js"></script>
+    <script src="../javascript/jwl.js"></script>
+    <!-- bootstrap js strat -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--bootstrap js end-->
+</body>
+</html>
